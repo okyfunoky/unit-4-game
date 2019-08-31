@@ -23,32 +23,34 @@
             <div id="heroselect" class="col-md-8">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3">
-                            <div class="character">
+                        <div class="col-md-3 character">
+                            <div class="character-thumb">
                                 <h6>Captain America</h6>
-                                <img class="img-fluid hero-image" src="./assets/images/captainamerica.jpg" alt="Captain America">
-                                <h6>150</h6>
+                                <img class="img-fluid hero-image" src="./assets/images/captainamerica.jpg"
+                                    alt="Captain America">
+                                <h6><span id="cap-a-health">150</span></h6>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="character">
+                        <div class="col-md-3 character">
+                            <div class="character-thumb">
                                 <h6>Thor</h6>
                                 <img class="img-fluid hero-image" src="./assets/images/thor.jpg" alt="Thor">
-                                <h6>200</h6>
+                                <h6><span id="thor-health">150</span></h6>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="character">
+                        <div class="col-md-3 character">
+                            <div class="character-thumb">
                                 <h6>Captain Marvel</h6>
-                                <img class="img-fluid hero-image" src="./assets/images/captainmarvel.jpg" alt="Captain Marvel">
-                                <h6>175</h6>
+                                <img class="img-fluid hero-image" src="./assets/images/captainmarvel.jpg"
+                                    alt="Captain Marvel">
+                                <h6><span id="cap-m-health">150</span></h6>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="character">
+                        <div class="col-md-3 character">
+                            <div class="character-thumb">
                                 <h6>The Hulk</h6>
                                 <img class="img-fluid hero-image" src="./assets/images/thehulk.jpg" alt="Mark Ruffalo">
-                                <h6>100</h6>
+                                <h6><span id="hulk-health">150</span></h6>
                             </div>
                         </div>
                     </div>
@@ -57,21 +59,14 @@
 
             </div>
         </div>
-        <div class="row">
-            <div id="yourcharacter" class="col-md-3">
-                <h2>Your Character</h2>
-            </div>
+        <h2>Your Character</h2>
+        <div class="row" id="yourcharacter">
+
         </div>
+        <h2>Enemies Available To Attack</h2>
         <div class="row">
-            <div id="enemycharacterselect" class="col-md-9">
-                <h2>Enemies Available To Attack</h2>
-                <div class="container">
-                    <div class="row">
-                        <div id="enemy-one" class="col-md-3"></div>
-                        <div id="enemy-two" class="col-md-3"></div>
-                        <div id="enemy-three" class="col-md-3"></div>
-                    </div>
-                </div>
+            <div class="container">
+                <div class="row" id="enemycharacterselect"></div>
             </div>
         </div>
         <div class="row">
