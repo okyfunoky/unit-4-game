@@ -23,7 +23,7 @@
             <div id="heroselect" class="col-md-8">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 character">
+                        <div class="col-md-3 character" value="captainAmerica">
                             <div class="character-thumb">
                                 <h6>Captain America</h6>
                                 <img class="img-fluid hero-image" src="./assets/images/captainamerica.jpg"
@@ -31,14 +31,14 @@
                                 <h6><span id="cap-a-health">150</span></h6>
                             </div>
                         </div>
-                        <div class="col-md-3 character">
+                        <div class="col-md-3 character" value="thor">
                             <div class="character-thumb">
                                 <h6>Thor</h6>
                                 <img class="img-fluid hero-image" src="./assets/images/thor.jpg" alt="Thor">
                                 <h6><span id="thor-health">150</span></h6>
                             </div>
                         </div>
-                        <div class="col-md-3 character">
+                        <div class="col-md-3 character" value="captainMarvel">
                             <div class="character-thumb">
                                 <h6>Captain Marvel</h6>
                                 <img class="img-fluid hero-image" src="./assets/images/captainmarvel.jpg"
@@ -46,7 +46,7 @@
                                 <h6><span id="cap-m-health">150</span></h6>
                             </div>
                         </div>
-                        <div class="col-md-3 character">
+                        <div class="col-md-3 character" value="hulk">
                             <div class="character-thumb">
                                 <h6>The Hulk</h6>
                                 <img class="img-fluid hero-image" src="./assets/images/thehulk.jpg" alt="Mark Ruffalo">
@@ -75,7 +75,11 @@
                 <div class="row" id="currentEnemy"></div>
             </div>
         </div>
-        <div class="row"></div>
+        <div class="row">
+            <div class="col-3-md">
+                    <button type="button" class="btn btn-primary" id="attackButton">Attack</button>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
