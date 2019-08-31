@@ -7,9 +7,12 @@ $('.character').click(function (){
         $('#enemycharacterselect').append($('.character'));
         $('#yourcharacter').append(playerCharacter);
     }
-    // }else if(currentEnemy === undefined){
-    //     currentEnemy = this;
-    //     $(this).detach();
-    //     $('#enemycharacterselect').append(this);
-    // }
+
+    if(currentEnemy === undefined || currentEnemy.defeated){
+        if(!(this === playerCharacter)){
+            console.log('getting here');
+            currentEnemy = this;
+            $('#currentEnemy').append(currentEnemy);
+        }
+    }
 });
