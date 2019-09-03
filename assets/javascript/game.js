@@ -7,6 +7,7 @@ var game = {
 };
 
 var captainAmerica = {
+    name: "captain-america",
     health: 150,
     attackPower: 10,
     baseAttackPower: 10,
@@ -14,6 +15,7 @@ var captainAmerica = {
 };
 
 var theHulk = {
+    name: "hulk",
     health: 150,
     attackPower: 10,
     baseAttackPower: 10,
@@ -21,6 +23,7 @@ var theHulk = {
 };
 
 var captainMarvel = {
+    name: "captain-marvel",
     health: 150,
     attackPower: 10,
     baseAttackPower: 10,
@@ -28,6 +31,7 @@ var captainMarvel = {
 };
 
 var thor = {
+    name: "thor",
     health: 150,
     attackPower: 10,
     baseAttackPower: 10,
@@ -86,9 +90,14 @@ $('#attackButton').click(function(){
 
 function attack(attacker, target){
     console.log("attacking");
+    console.log("char", game.playerCharacter)
+    playerHealthAttribute = "#" + game.playerCharacter.name + "-health";
+    enemyHealthAttribute = "#" + game.currentEnemy.name + "-health";
+    console.log("attrib:" + playerHealthAttribute);
     
     target.health -= attacker.attackPower;
     attacker.attackPower += attacker.baseAttackPower;
+
 
     if(attacker.health <= 0){
         gameOver();
@@ -97,11 +106,15 @@ function attack(attacker, target){
     if(target.health > 0){
         counterAttack(attacker, target);
     }
-
+    
     if(target.health <= 0){
         //defeat code, select next enemy, etc.
         getNextEnemy();
     }
+
+    $(playerHealthAttribute).text(attacker.health);
+    $(enemyHealthAttribute).text(target.health);
+
 
 };
 
