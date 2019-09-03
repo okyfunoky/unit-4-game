@@ -8,76 +8,80 @@
     <title>Marvel RPG</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Marvel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <div>
-        <h1>
-            Marvel RPG
-        </h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div id="heroselect" class="col-md-8">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 character" value="captainAmerica">
-                            <div class="character-thumb">
-                                <h6>Captain America</h6>
-                                <img class="img-fluid hero-image" src="./assets/images/captainamerica.jpg"
-                                    alt="Captain America">
-                                <h6><span id="captain-america-health">150</span></h6>
+    <div class="background">
+        <div>
+            <h1>
+                Marvel RPG
+            </h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="heroselect" class="col-md-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 character" value="captainAmerica">
+                                <div class="character-thumb">
+                                    <h6>Captain America</h6>
+                                    <img class="img-fluid hero-image" src="./assets/images/captainamerica.jpg"
+                                        alt="Captain America">
+                                    <h6><span id="captain-america-health">150</span></h6>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 character" value="thor">
-                            <div class="character-thumb">
-                                <h6>Thor</h6>
-                                <img class="img-fluid hero-image" src="./assets/images/thor.jpg" alt="Thor">
-                                <h6><span id="thor-health">150</span></h6>
+                            <div class="col-md-3 character" value="thor">
+                                <div class="character-thumb">
+                                    <h6>Thor</h6>
+                                    <img class="img-fluid hero-image" src="./assets/images/thor.jpg" alt="Thor">
+                                    <h6><span id="thor-health">150</span></h6>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 character" value="captainMarvel">
-                            <div class="character-thumb">
-                                <h6>Captain Marvel</h6>
-                                <img class="img-fluid hero-image" src="./assets/images/captainmarvel.jpg"
-                                    alt="Captain Marvel">
-                                <h6><span id="captain-marvel-health">150</span></h6>
+                            <div class="col-md-3 character" value="captainMarvel">
+                                <div class="character-thumb">
+                                    <h6>Captain Marvel</h6>
+                                    <img class="img-fluid hero-image" src="./assets/images/captainmarvel.jpg"
+                                        alt="Captain Marvel">
+                                    <h6><span id="captain-marvel-health">150</span></h6>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-3 character" value="hulk">
-                            <div class="character-thumb">
-                                <h6>The Hulk</h6>
-                                <img class="img-fluid hero-image" src="./assets/images/thehulk.jpg" alt="Mark Ruffalo">
-                                <h6><span id="hulk-health">150</span></h6>
+                            <div class="col-md-3 character" value="hulk">
+                                <div class="character-thumb">
+                                    <h6>The Hulk</h6>
+                                    <img class="img-fluid hero-image" src="./assets/images/thehulk.jpg"
+                                        alt="Mark Ruffalo">
+                                    <h6><span id="hulk-health">150</span></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-
+            </div>
+            <h2>Your Character</h2>
+            <div class="row" id="yourcharacter">
 
             </div>
-        </div>
-        <h2>Your Character</h2>
-        <div class="row" id="yourcharacter">
-
-        </div>
-        <h2>Enemies Available To Attack</h2>
-        <div class="row">
-            <div class="container">
-                <div class="row" id="enemycharacterselect"></div>
+            <h2>Enemies Available To Attack</h2>
+            <div class="row">
+                <div class="container">
+                    <div class="row" id="enemycharacterselect"></div>
+                </div>
             </div>
-        </div>
-        <h2>Enemies Available To Attack</h2>
-        <div class="row">
-            <div class="container">
-                <div class="row" id="currentEnemy"></div>
+            <h2>Enemies Available To Attack</h2>
+            <div class="row">
+                <div class="container">
+                    <div class="row" id="currentEnemy"></div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-3-md">
+            <div class="row">
+                <div class="col-3-md">
                     <button type="button" class="btn btn-primary" id="attackButton">Attack</button>
+                </div>
             </div>
         </div>
     </div>

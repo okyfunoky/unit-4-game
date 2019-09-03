@@ -1,5 +1,16 @@
+* {
+    font-family: 'Marvel', sans-serif;
+    color: white;
+}
+
+.background {
+    background-image: url('../images/avengerstower.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .character-thumb {
-    background-color:gold;
+    background-color:red;
 }
 
 .img-fluid {
@@ -9,19 +20,19 @@
 #heroselect {
     height: 15em;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 #yourcharacter {
     height: 15em;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 #enemycharacterselect {
     height: 15em;
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 #defender {
