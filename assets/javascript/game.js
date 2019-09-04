@@ -16,26 +16,26 @@ var captainAmerica = {
 
 var theHulk = {
     name: "hulk",
-    health: 150,
-    attackPower: 10,
-    baseAttackPower: 10,
-    counterAttackPower: 15,
+    health: 200,
+    attackPower: 20,
+    baseAttackPower: 20,
+    counterAttackPower: 25,
 };
 
 var captainMarvel = {
     name: "captain-marvel",
-    health: 150,
-    attackPower: 10,
-    baseAttackPower: 10,
-    counterAttackPower: 15,
+    health: 175,
+    attackPower: 15,
+    baseAttackPower: 15,
+    counterAttackPower: 10,
 };
 
 var thor = {
     name: "thor",
-    health: 150,
-    attackPower: 10,
-    baseAttackPower: 10,
-    counterAttackPower: 15,
+    health: 180,
+    attackPower: 25,
+    baseAttackPower: 25,
+    counterAttackPower: 9,
 };
 
 $('.character').click(function (){
